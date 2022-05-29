@@ -88,7 +88,7 @@ function displayComputerChoice() {
 function updateScore(playerChoice) {
   // console.log(playerChoice, computerChoice);
   if (playerChoice === computerChoice) {
-    resultText.textContent = "Tie Dye POG";
+    resultText.textContent = "Tie";
   } else {
     const choice = choices[playerChoice];
     if (choice.defeats.indexOf(computerChoice) > -1) {
@@ -97,7 +97,7 @@ function updateScore(playerChoice) {
       playerScoreNumber++;
       playerScore.textContent = playerScoreNumber;
     } else {
-      resultText.textContent = "You LOOSE Get Fucked";
+      resultText.textContent = "You LOOSE";
       computerScoreNumber++;
       computahScore.textContent = computerScoreNumber;
     }
