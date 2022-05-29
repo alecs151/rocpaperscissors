@@ -92,12 +92,12 @@ function updateScore(playerChoice) {
   } else {
     const choice = choices[playerChoice];
     if (choice.defeats.indexOf(computerChoice) > -1) {
-      resultText.textContent = "You Win Poggies!!";
+      resultText.textContent = "You Win!!";
       startConfetti();
       playerScoreNumber++;
       playerScore.textContent = playerScoreNumber;
     } else {
-      resultText.textContent = "You LOOSE";
+      resultText.textContent = "You Loose!";
       computerScoreNumber++;
       computahScore.textContent = computerScoreNumber;
     }
